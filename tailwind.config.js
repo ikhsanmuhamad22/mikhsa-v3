@@ -8,6 +8,7 @@ export default {
     colors: {
       dark: '#333',
       light: '#eee',
+      silver: '#C6C4C0',
     },
   },
   plugins: [],
