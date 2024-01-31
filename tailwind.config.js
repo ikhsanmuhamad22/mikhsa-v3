@@ -5,10 +5,12 @@ export default {
     fontFamily: {
       montserrat: ["'Montserrat', sans-serif"],
     },
-    colors: {
-      dark: '#333',
-      light: '#eee',
-      silver: '#C6C4C0',
+    extend: {
+      colors: {
+        dark: '#333',
+        light: '#eee',
+        silver: '#C6C4C0',
+      },
     },
   },
   plugins: [],

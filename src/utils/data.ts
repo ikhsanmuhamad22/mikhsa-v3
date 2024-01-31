@@ -48,3 +48,14 @@ export const skillItem = [
     nameSkill: 'Postgres SQL',
   },
 ];
+
+export const skillLanguage = [
+  {
+    id: 1,
+    nameSkill: 'Indonesia',
+  },
+  {
+    id: 1,
+    nameSkill: 'English',
+  },
+];

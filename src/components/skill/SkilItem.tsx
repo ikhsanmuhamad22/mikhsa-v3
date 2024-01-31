@@ -3,9 +3,9 @@ import { skillItem } from '../../utils/data';
 const SkillItem = () => {
   const skills: SkillItem[] = skillItem;
   return (
-    <div className="grid grid-cols-4 gap-2 mt-3">
+    <div className="grid lg:grid-cols-4 md:grid-cols-3 grid-cols-2 gap-2 mt-3 max-w-full">
       {skills.map((skill: SkillItem) => (
-        <div className="bg-silver rounded-sm text-dark">
+        <div className="bg-silver hover:bg-light rounded-sm text-dark">
           <p className="p-1 pl-2" key={skill.id}>
             {skill.nameSkill}
           </p>
