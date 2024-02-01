@@ -20,7 +20,7 @@ const Summery = () => {
             eager and very active in learning new technologies.
           </p>
           <br />
-          <button className="p-2 bg-silver hover:bg-light text-dark rounded-md">
+          <button className="p-2 bg-light hover:bg-white text-dark rounded-md">
             <a href={myCV} download>
               Get Resume
             </a>

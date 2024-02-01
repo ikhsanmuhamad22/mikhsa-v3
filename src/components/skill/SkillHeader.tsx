@@ -1,7 +1,7 @@
 const SkillHeader = () => {
   return (
-    <div className="flex gap-5 pb-1 border-b-2 text-silver">
-      <div className="flex  items-center space-x-2 hover:text-light cursor-pointer">
+    <div className="flex gap-1 pb-1 border-b-2">
+      <div className="flex  items-center space-x-2 p-1 rounded-sm hover:text-light hover:bg-jet cursor-pointer">
         <svg
           xmlns="http://www.w3.org/2000/svg"
           width="24"
@@ -14,7 +14,7 @@ const SkillHeader = () => {
         </svg>
         <p>Software</p>
       </div>
-      <div className="flex items-center space-x-2 hover:text-light cursor-pointer">
+      <div className="flex items-center space-x-2 p-1 rounded-sm hover:text-light hover:bg-jet cursor-pointer">
         <svg
           xmlns="http://www.w3.org/2000/svg"
           width="16"
@@ -28,7 +28,7 @@ const SkillHeader = () => {
         </svg>
         <p>Language</p>
       </div>
-      <div className="flex  items-center space-x-2 hover:text-light cursor-pointer">
+      <div className="flex  items-center space-x-2 p-1 rounded-sm hover:text-light hover:bg-jet cursor-pointer">
         <svg
           xmlns="http://www.w3.org/2000/svg"
           width="16"

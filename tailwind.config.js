@@ -7,9 +7,10 @@ export default {
     },
     extend: {
       colors: {
-        dark: '#333',
-        light: '#eee',
-        silver: '#C6C4C0',
+        dark: '#191919',
+        jet: '#333',
+        light: '#EEE',
+        timberwolf: '#E2DBDB',
       },
     },
   },

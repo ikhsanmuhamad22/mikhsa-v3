@@ -59,3 +59,36 @@ export const skillLanguage = [
     nameSkill: 'English',
   },
 ];
+
+export const projects = [
+  {
+    id: 1,
+    title: 'CMS Ragam Artticle',
+    img: '../../assets/project-img/Screenshot (72).png',
+    stack: ['Express js', 'Sequelize Orm', 'MySQL'],
+    short_desc: 'Sebuah cms yang kami buat untuk memenuhi',
+    view_code: '',
+    view_page: '',
+    role: 'backend',
+  },
+  {
+    id: 1,
+    title: 'CMS Ragam Artticle',
+    img: '../assets/project-img/Screenshot (72).png',
+    stack: ['Express js', 'Sequelize Orm', 'MySQL'],
+    short_desc: 'Sebuah cms yang kami buat untuk memenuhi',
+    view_code: '',
+    view_page: '',
+    role: 'backend',
+  },
+  {
+    id: 1,
+    title: 'CMS Ragam Artticle',
+    img: '../assets/project-img/Screenshot (72).png',
+    stack: ['Express js', 'Sequelize Orm', 'MySQL'],
+    short_desc: 'Sebuah cms yang kami buat untuk memenuhi',
+    view_code: '',
+    view_page: '',
+    role: 'backend',
+  },
+];
