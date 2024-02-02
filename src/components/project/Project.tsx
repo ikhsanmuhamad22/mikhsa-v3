@@ -5,8 +5,10 @@ const Project = () => {
   return (
     <section id="Project" className="my-10">
       <h1 className="text-2xl font-bold mb-3">Projects</h1>
-      <ProjectHeader />
-      <ProjectItem />
+      <div className="px-2">
+        <ProjectHeader />
+        <ProjectItem />
+      </div>
     </section>
   );
 };

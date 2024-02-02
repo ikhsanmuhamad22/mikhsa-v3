@@ -3,7 +3,7 @@ import img from '../../assets/project-img/Screenshot (72).png';
 
 const ProjectItem = () => {
   return (
-    <div className="grid md:grid-cols-2 grid-cols-1 gap-4 mt-3 max-w-full">
+    <div className="grid lg:grid-cols-2 grid-cols-1 gap-4 mt-3 max-w-full">
       {projects.map((project) => (
         <div
           key={project.id}

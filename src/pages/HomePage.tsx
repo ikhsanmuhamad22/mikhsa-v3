@@ -1,3 +1,4 @@
+import Contacts from '../components/contacts/Contacts';
 import Project from '../components/project/Project';
 import Skill from '../components/skill/Skill';
 import Summery from '../components/Summery';
@@ -8,6 +9,7 @@ const HomePage = () => {
       <Summery />
       <Skill />
       <Project />
+      <Contacts />
     </main>
   );
 };
