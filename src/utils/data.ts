@@ -1,4 +1,4 @@
-export const skillItem = [
+export const skillSoftware = [
   {
     id: 1,
     nameSkill: 'Java Script',
@@ -55,7 +55,7 @@ export const skillLanguage = [
     nameSkill: 'Indonesia',
   },
   {
-    id: 1,
+    id: 2,
     nameSkill: 'English',
   },
 ];

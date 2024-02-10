@@ -1,7 +1,4 @@
-import { skillItem } from '../../utils/data';
-
-const SkillItem = () => {
-  const skills: SkillItem[] = skillItem;
+const SkillItem = ({ skills }: SkillItemProps) => {
   return (
     <div className="grid lg:grid-cols-4 md:grid-cols-3 grid-cols-2 gap-2 mt-3 max-w-full">
       {skills.map((skill: SkillItem) => (
@@ -14,6 +11,10 @@ const SkillItem = () => {
     </div>
   );
 };
+
+interface SkillItemProps {
+  skills: SkillItem[];
+}
 
 interface SkillItem {
   id: number;

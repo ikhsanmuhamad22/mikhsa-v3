@@ -1,12 +1,37 @@
+import { useEffect, useState } from 'react';
 import SkillItem from './SkilItem';
 import SkillHeader from './SkillHeader';
+import { skillLanguage, skillSoftware } from '../../utils/data';
 
 const Skill = () => {
+  const [skill, setSkill] = useState('software');
+  const [skillItem, setSkillItem] = useState(skillSoftware);
+
+  const onChangeSkill = (result: string) => {
+    console.log(result);
+    setSkill(result);
+  };
+
+  useEffect(() => {
+    const getSkill = () => {
+      switch (skill) {
+        case 'software':
+          setSkillItem(skillSoftware);
+          break;
+        case 'language':
+          setSkillItem(skillLanguage);
+          break;
+      }
+    };
+
+    getSkill();
+  }, [skill]);
+
   return (
     <section id="skill" className="my-10">
       <h1 className="text-2xl font-bold mb-3">Skills</h1>
-      <SkillHeader />
-      <SkillItem />
+      <SkillHeader changeSkill={onChangeSkill} />
+      <SkillItem skills={skillItem} />
     </section>
   );
 };
