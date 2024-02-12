@@ -1,14 +1,17 @@
 import { useEffect, useState } from 'react';
 import SkillItem from './SkilItem';
 import SkillHeader from './SkillHeader';
-import { skillLanguage, skillSoftware } from '../../utils/data';
+import {
+  skillCertificate,
+  skillLanguage,
+  skillSoftware,
+} from '../../utils/data';
 
 const Skill = () => {
   const [skill, setSkill] = useState('software');
   const [skillItem, setSkillItem] = useState(skillSoftware);
 
   const onChangeSkill = (result: string) => {
-    console.log(result);
     setSkill(result);
   };
 
@@ -21,6 +24,9 @@ const Skill = () => {
         case 'language':
           setSkillItem(skillLanguage);
           break;
+        case 'certificate':
+          setSkillItem(skillCertificate);
+          break;
       }
     };
 
@@ -30,8 +36,10 @@ const Skill = () => {
   return (
     <section id="skill" className="my-10">
       <h1 className="text-2xl font-bold mb-3">Skills</h1>
-      <SkillHeader changeSkill={onChangeSkill} />
-      <SkillItem skills={skillItem} />
+      <div className="px-2">
+        <SkillHeader changeSkill={onChangeSkill} skillSection={skill} />
+        <SkillItem skills={skillItem} skillSection={skill} />
+      </div>
     </section>
   );
 };

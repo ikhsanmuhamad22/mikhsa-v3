@@ -1,6 +1,12 @@
-const SkillItem = ({ skills }: SkillItemProps) => {
+const SkillItem = ({ skills, skillSection }: SkillItemProps) => {
   return (
-    <div className="grid lg:grid-cols-4 md:grid-cols-3 grid-cols-2 gap-2 mt-3 max-w-full">
+    <div
+      className={`grid ${
+        skillSection === 'certificate'
+          ? 'grid-cols-1'
+          : 'lg:grid-cols-4 md:grid-cols-3 grid-cols-2'
+      }  gap-2 mt-3 max-w-full`}
+    >
       {skills.map((skill: SkillItem) => (
         <div className="bg-jet hover:bg-black rounded-sm text-white">
           <p className="p-1 pl-2 font-medium " key={skill.id}>
@@ -14,6 +20,7 @@ const SkillItem = ({ skills }: SkillItemProps) => {
 
 interface SkillItemProps {
   skills: SkillItem[];
+  skillSection: string;
 }
 
 interface SkillItem {

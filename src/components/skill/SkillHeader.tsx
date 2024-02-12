@@ -1,9 +1,11 @@
-const SkillHeader = ({ changeSkill }: SkillHeaderProps) => {
+const SkillHeader = ({ changeSkill, skillSection }: SkillHeaderProps) => {
   return (
     <div className="flex gap-1 pb-1 border-b-2">
       <div
         onClick={() => changeSkill('software')}
-        className="flex items-center space-x-2 p-1 rounded-sm hover:text-light hover:bg-jet cursor-pointer"
+        className={`flex items-center space-x-2 px-2 rounded-sm ${
+          skillSection === 'software' ? 'bg-jet' : null
+        } hover:text-light hover:bg-jet cursor-pointer`}
       >
         <svg
           xmlns="http://www.w3.org/2000/svg"
@@ -20,7 +22,9 @@ const SkillHeader = ({ changeSkill }: SkillHeaderProps) => {
 
       <div
         onClick={() => changeSkill('language')}
-        className="flex items-center space-x-2 p-1 rounded-sm hover:text-light hover:bg-jet cursor-pointer"
+        className={`flex items-center space-x-2 px-2 rounded-sm ${
+          skillSection === 'language' ? 'bg-jet' : null
+        } hover:text-light hover:bg-jet cursor-pointer`}
       >
         <svg
           xmlns="http://www.w3.org/2000/svg"
@@ -36,7 +40,12 @@ const SkillHeader = ({ changeSkill }: SkillHeaderProps) => {
         <p>Language</p>
       </div>
 
-      <div className="flex  items-center space-x-2 p-1 rounded-sm hover:text-light hover:bg-jet cursor-pointer">
+      <div
+        onClick={() => changeSkill('certificate')}
+        className={`flex items-center space-x-2 px-2 rounded-sm ${
+          skillSection === 'certificate' ? 'bg-jet' : null
+        } hover:text-light hover:bg-jet cursor-pointer`}
+      >
         <svg
           xmlns="http://www.w3.org/2000/svg"
           width="16"
@@ -47,14 +56,15 @@ const SkillHeader = ({ changeSkill }: SkillHeaderProps) => {
         >
           <path d="M10.067.87a2.89 2.89 0 0 0-4.134 0l-.622.638-.89-.011a2.89 2.89 0 0 0-2.924 2.924l.01.89-.636.622a2.89 2.89 0 0 0 0 4.134l.637.622-.011.89a2.89 2.89 0 0 0 2.924 2.924l.89-.01.622.636a2.89 2.89 0 0 0 4.134 0l.622-.637.89.011a2.89 2.89 0 0 0 2.924-2.924l-.01-.89.636-.622a2.89 2.89 0 0 0 0-4.134l-.637-.622.011-.89a2.89 2.89 0 0 0-2.924-2.924l-.89.01zm.287 5.984-3 3a.5.5 0 0 1-.708 0l-1.5-1.5a.5.5 0 1 1 .708-.708L7 8.793l2.646-2.647a.5.5 0 0 1 .708.708" />
         </svg>
-        <p>Sertificate</p>
+        <p>Certificates</p>
       </div>
     </div>
   );
 };
 
 interface SkillHeaderProps {
-  changeSkill: (skill: string) => void; // Tipe fungsi yang menerima string dan tidak mengembalikan nilai (void)
+  changeSkill: (skillSection: string) => void;
+  skillSection: string;
 }
 
 export default SkillHeader;
