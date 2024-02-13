@@ -10,6 +10,9 @@ const HomePage = () => {
       <Skill />
       <Project />
       <Contacts />
+      <h1 className="text-end font-medium italic mb-2">
+        @Ikhsan_muhammad_2024
+      </h1>
     </main>
   );
 };

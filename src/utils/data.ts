@@ -84,7 +84,7 @@ export const projects = [
   {
     id: 1,
     title: 'TOKOSYCN',
-    img: '../../assets/project-img/Screenshot (72).png',
+    img: '../src/assets/project-img/Screenshot (72).png',
     stack: ['ReactJs', 'TypeScript', 'SASS'],
     short_desc:
       'Is a web that is made to help UMKM so that they can sell their products faster and more efficiently,',
@@ -95,7 +95,7 @@ export const projects = [
   {
     id: 2,
     title: 'CMS Ragam Artticle',
-    img: '../assets/project-img/Screenshot (72).png',
+    img: '../src/assets/project-img/Screenshot (72).png',
     stack: ['JavaScript', 'Express js', 'Sequelize Orm', 'MySQL'],
     short_desc: 'Simple web portal media when i study at Pesilat Alkademi ',
     view_code: '',
@@ -105,7 +105,7 @@ export const projects = [
   {
     id: 3,
     title: 'Personal-Notes',
-    img: '../assets/project-img/Screenshot (72).png',
+    img: '../src/assets/project-img/Screenshot (72).png',
     stack: ['javaScript', 'ReactJs', 'TailwindCSS'],
     short_desc:
       'Is a web that I created to fulfill the submission of the dicoding academies of the React JS class created using React Vite and TailwindCSS,',
@@ -116,7 +116,7 @@ export const projects = [
   {
     id: 4,
     title: 'SHAREINGS-APPS',
-    img: '../assets/project-img/Screenshot (72).png',
+    img: '../src/assets/project-img/Screenshot (72).png',
     stack: ['javaScript', 'TailwindCSS'],
     short_desc:
       'Simple web to share posts I make using nuxtjs2 and tailwind css,',
@@ -127,7 +127,7 @@ export const projects = [
   {
     id: 5,
     title: 'SHAREINGS-APPS-API',
-    img: '../assets/project-img/Screenshot (72).png',
+    img: '../src/assets/project-img/Screenshot (72).png',
     stack: ['javaScript', 'PrismaOrm', 'PostgressSQL'],
     short_desc: 'is API for my shareing apps',
     view_code: '',
@@ -135,9 +135,9 @@ export const projects = [
     role: 'frontend',
   },
   {
-    id: 5,
+    id: 6,
     title: 'Forum api',
-    img: '../assets/project-img/Screenshot (72).png',
+    img: '../src/assets/project-img/Screenshot (72).png',
     stack: [
       'javaScript',
       'HappiJs',
@@ -153,9 +153,9 @@ export const projects = [
     role: 'backend',
   },
   {
-    id: 5,
+    id: 7,
     title: 'Open music api',
-    img: '../assets/project-img/Screenshot (72).png',
+    img: '../src/assets/project-img/Screenshot (72).png',
     stack: ['javaScript', 'PrismaOrm', 'PostgressSQL'],
     short_desc:
       'This project is a submission from learning backend fundamentals in dicoding academy',

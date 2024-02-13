@@ -4,6 +4,7 @@ export default {
   theme: {
     fontFamily: {
       montserrat: ["'Montserrat', sans-serif"],
+      lexend: ["'Lexend', sans-serif'"],
     },
     extend: {
       colors: {
