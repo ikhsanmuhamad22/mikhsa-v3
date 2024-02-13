@@ -1,10 +1,7 @@
-import { projects } from '../../utils/data';
-import img from '../../assets/project-img/Screenshot (72).png';
-
-const ProjectItem = () => {
+const ProjectItem = ({ projectItem }: ProjectItemProps) => {
   return (
     <div className="grid lg:grid-cols-2 grid-cols-1 gap-4 mt-3 max-w-full">
-      {projects.map((project) => (
+      {projectItem.map((project: ProjectItem) => (
         <div
           key={project.id}
           className="bg-jet p-3 rounded-sm flex flex-col gap-2"
@@ -12,7 +9,7 @@ const ProjectItem = () => {
           <img
             height={30}
             className="border-b border-white rounded-sm"
-            src={img}
+            src={project.img}
             alt="kosong"
           />
           <div className="flex gap-2">
@@ -30,7 +27,7 @@ const ProjectItem = () => {
           </div>
           <p className="text-sm">{project.short_desc}</p>
           <div className="grid gap-3 text-center lg:grid-cols-3 grid-cols-2">
-            {project.stack.map((stack) => (
+            {project.stack.map((stack: string) => (
               <div className="bg-black rounded-sm">
                 <p className="text-sm font-semibold">{stack}</p>
               </div>
@@ -41,5 +38,20 @@ const ProjectItem = () => {
     </div>
   );
 };
+
+interface ProjectItemProps {
+  projectItem: ProjectItem[];
+}
+
+interface ProjectItem {
+  id: number;
+  title: string;
+  img: string;
+  stack: string[];
+  short_desc: string;
+  view_code: string | null | undefined;
+  view_page: string | null | undefined;
+  role: string;
+}
 
 export default ProjectItem;

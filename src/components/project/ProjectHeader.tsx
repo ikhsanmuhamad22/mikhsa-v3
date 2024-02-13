@@ -1,7 +1,30 @@
-const ProjectHeader = () => {
+const ProjectHeader = ({ changeProject, project }: ProjectHeaderProps) => {
   return (
     <div className="flex gap-1 pb-1 border-b-2 ">
-      <div className="flex  items-center space-x-2 p-1 rounded-sm hover:text-light hover:bg-jet cursor-pointer">
+      <div
+        onClick={() => changeProject('all')}
+        className={`flex items-center space-x-2 px-2 rounded-sm ${
+          project === 'all' ? 'bg-jet' : null
+        } hover:text-light hover:bg-jet cursor-pointer`}
+      >
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          width="16"
+          height="16"
+          fill="currentColor"
+          className="bi bi-asterisk"
+          viewBox="0 0 16 16"
+        >
+          <path d="M8 0a1 1 0 0 1 1 1v5.268l4.562-2.634a1 1 0 1 1 1 1.732L10 8l4.562 2.634a1 1 0 1 1-1 1.732L9 9.732V15a1 1 0 1 1-2 0V9.732l-4.562 2.634a1 1 0 1 1-1-1.732L6 8 1.438 5.366a1 1 0 0 1 1-1.732L7 6.268V1a1 1 0 0 1 1-1" />
+        </svg>
+        <p>All Project </p>
+      </div>
+      <div
+        onClick={() => changeProject('frontend')}
+        className={`flex items-center space-x-2 px-2 rounded-sm ${
+          project === 'frontend' ? 'bg-jet' : null
+        } hover:text-light hover:bg-jet cursor-pointer`}
+      >
         <svg
           xmlns="http://www.w3.org/2000/svg"
           width="16"
@@ -14,7 +37,12 @@ const ProjectHeader = () => {
         </svg>
         <p>FrontEnd </p>
       </div>
-      <div className="flex  items-center space-x-2 p-1 rounded-sm hover:text-light hover:bg-jet cursor-pointer">
+      <div
+        onClick={() => changeProject('backend')}
+        className={`flex items-center space-x-2 px-2 rounded-sm ${
+          project === 'backend' ? 'bg-jet' : null
+        } hover:text-light hover:bg-jet cursor-pointer`}
+      >
         <svg
           xmlns="http://www.w3.org/2000/svg"
           width="20"
@@ -33,5 +61,10 @@ const ProjectHeader = () => {
     </div>
   );
 };
+
+interface ProjectHeaderProps {
+  changeProject: (skillSection: string) => void;
+  project: string;
+}
 
 export default ProjectHeader;
