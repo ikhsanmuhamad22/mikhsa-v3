@@ -1,10 +1,13 @@
+import { Link } from 'react-router-dom';
+
 const ProjectItem = ({ projectItem }: ProjectItemProps) => {
   return (
-    <div className="grid lg:grid-cols-2 grid-cols-1 gap-4 mt-3 max-w-full">
+    <div className="grid lg:grid-cols-2 grid-cols-1 gap-4 mt-3 max-w-full ">
       {projectItem.map((project: ProjectItem) => (
-        <div
+        <Link
+          to={project.view_code}
           key={project.id}
-          className="bg-jet p-3 rounded-sm flex flex-col gap-2"
+          className="bg-jet p-3 rounded-sm flex flex-col gap-2 hover:scale-105 transition-all hover:bg-dark "
         >
           <img
             height={30}
@@ -35,7 +38,7 @@ const ProjectItem = ({ projectItem }: ProjectItemProps) => {
               </div>
             ))}
           </div>
-        </div>
+        </Link>
       ))}
     </div>
   );
@@ -51,7 +54,7 @@ interface ProjectItem {
   img: string;
   stack: string[];
   short_desc: string;
-  view_code: string | null | undefined;
+  view_code: string;
   view_page: string | null | undefined;
   role: string;
 }

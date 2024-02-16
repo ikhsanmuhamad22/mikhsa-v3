@@ -9,7 +9,7 @@ const Contacts = () => {
         <div>
           <p>
             If you're interested to maximize your and your team's efficiency,
-            send us a message to get started.
+            and get new team. Send us a message to get started.
           </p>
           <br />
           <div>
