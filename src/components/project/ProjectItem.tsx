@@ -13,7 +13,7 @@ const ProjectItem = ({ projectItem }: ProjectItemProps) => {
             <img
               height={30}
               className="rounded-sm mb-2"
-              src={`../../../public/project-img/${project.img}`}
+              src={`../src/assets/project-img/${project.img}`}
               alt="kosong"
             />
             <div>
