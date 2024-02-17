@@ -5,7 +5,7 @@ import Summery from '../components/Summery';
 
 const HomePage = () => {
   return (
-    <main className="md:w-3/5 md:mx-auto px-3 gap-5 w-full h-full m-auto">
+    <main className="md:w-3/5 md:mx-auto px-2 gap-5 w-full h-full m-auto">
       <Summery />
       <Skill />
       <Project />

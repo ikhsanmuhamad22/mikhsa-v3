@@ -84,7 +84,7 @@ export const projects = [
   {
     id: 1,
     title: 'TOKOSYCN',
-    img: '../src/assets/project-img/tokosync.png',
+    img: 'tokosync.png',
     stack: ['ReactJs', 'TypeScript', 'SASS'],
     short_desc:
       'Is a web that is made to help UMKM so that they can sell their products faster and more efficiently,',
@@ -94,8 +94,8 @@ export const projects = [
   },
   {
     id: 2,
-    title: 'CMS Ragam Artticle',
-    img: '../src/assets/project-img/cms-article.png',
+    title: 'CMS Ragam Artticle api',
+    img: 'cms-article.png',
     stack: ['JavaScript', 'Express js', 'Sequelize Orm', 'MySQL'],
     short_desc: 'Simple web portal media when i study at Pesilat Alkademi ',
     view_code: 'https://github.com/kelompokpesilat1/backend',
@@ -105,7 +105,7 @@ export const projects = [
   {
     id: 3,
     title: 'Personal-Notes',
-    img: '../src/assets/project-img/personal-notes.png',
+    img: 'personal-notes.png',
     stack: ['javaScript', 'ReactJs', 'TailwindCSS'],
     short_desc:
       'Is a web that I created to fulfill the submission of the dicoding academies of the React JS class created using React Vite and TailwindCSS,',
@@ -116,7 +116,7 @@ export const projects = [
   {
     id: 4,
     title: 'SHAREINGS-APPS',
-    img: '../src/assets/project-img/shareings-app.png',
+    img: 'shareings-app.png',
     stack: ['javaScript', 'TailwindCSS'],
     short_desc:
       'Simple web to share posts I make using nuxtjs2 and tailwind css,',
@@ -127,17 +127,17 @@ export const projects = [
   {
     id: 5,
     title: 'SHAREINGS-APPS-API',
-    img: '../src/assets/project-img/shareings-app.png',
+    img: 'shareings-app.png',
     stack: ['javaScript', 'PrismaOrm', 'PostgressSQL'],
     short_desc: 'is API for my shareing apps',
     view_code: 'https://github.com/ikhsanmuhamad22/shareings-api',
     view_page: '',
-    role: 'frontend',
+    role: 'backend',
   },
   {
     id: 6,
     title: 'Forum api',
-    img: '../src/assets/project-img/forum-api.png',
+    img: 'forum-api.png',
     stack: [
       'javaScript',
       'HappiJs',
@@ -155,7 +155,7 @@ export const projects = [
   {
     id: 7,
     title: 'Open music api',
-    img: '../src/assets/project-img/open-music-api.png',
+    img: 'open-music-api.png',
     stack: ['javaScript', 'PrismaOrm', 'PostgressSQL'],
     short_desc:
       'This project is a submission from learning backend fundamentals in dicoding academy',
