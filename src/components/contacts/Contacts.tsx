@@ -16,7 +16,7 @@ const Contacts = () => {
             <Link
               to="https://www.linkedin.com/in/ihsan-muhamad-a15698242/"
               target="_blank"
-              className="flex gap-3 hover:bg-jet p-1 px-2 rounded-sm cursor-pointer mb-2 items-center"
+              className="flex gap-3 bg-jet hover:bg-dark hover:scale-105 transition-all p-1 px-2 rounded-sm cursor-pointer mb-2 items-center"
             >
               <svg
                 xmlns="http://www.w3.org/2000/svg"
@@ -36,7 +36,7 @@ const Contacts = () => {
             <Link
               to="https://api.whatsapp.com/send?phone=6285864221309&text=Hi!"
               target="_blank"
-              className="flex gap-3 hover:bg-jet p-1 px-2 rounded-sm cursor-pointer mb-2 items-center"
+              className="flex gap-3 bg-jet hover:bg-dark hover:scale-105 transition-all p-1 px-2 rounded-sm cursor-pointer mb-2 items-center"
             >
               <svg
                 xmlns="http://www.w3.org/2000/svg"
@@ -56,7 +56,7 @@ const Contacts = () => {
             <Link
               to="https://github.com/ikhsanmuhamad22"
               target="_blank"
-              className="flex gap-3 hover:bg-jet p-1 px-2 rounded-sm cursor-pointer mb-2"
+              className="flex gap-3 bg-jet hover:bg-dark hover:scale-105 transition-all p-1 px-2 rounded-sm cursor-pointer mb-2"
             >
               <svg
                 xmlns="http://www.w3.org/2000/svg"
@@ -76,7 +76,7 @@ const Contacts = () => {
             <Link
               to="https://www.instagram.com/ikhsnmhmd001_/"
               target="_blank"
-              className="flex gap-3 hover:bg-jet p-1 px-2 rounded-sm cursor-pointer items-center"
+              className="flex gap-3 bg-jet hover:bg-dark hover:scale-105 transition-all p-1 px-2 rounded-sm cursor-pointer items-center"
             >
               <svg
                 xmlns="http://www.w3.org/2000/svg"

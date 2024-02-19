@@ -127,7 +127,7 @@ export const projects = [
   {
     id: 5,
     title: 'SHAREINGS-APPS-API',
-    img: 'shareings-app.png',
+    img: 'shareings-api.png',
     stack: ['javaScript', 'PrismaOrm', 'PostgressSQL'],
     short_desc: 'is API for my shareing apps',
     view_code: 'https://github.com/ikhsanmuhamad22/shareings-api',

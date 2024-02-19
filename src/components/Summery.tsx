@@ -1,6 +1,3 @@
-import avatar from '../assets/easlo-laptop.svg';
-import myCV from '../assets/IHSAN.pdf';
-
 const Summery = () => {
   return (
     <section id="summery" className="pt-10 h-full mb-10">
@@ -21,7 +18,7 @@ const Summery = () => {
           </p>
           <br />
           <button className="p-2 bg-light hover:bg-white text-dark rounded-sm">
-            <a href={myCV} download>
+            <a href="./src/assets/IHSAN.pdf" download>
               Get Resume
             </a>
           </button>
@@ -30,7 +27,11 @@ const Summery = () => {
           id="img-summery"
           className="flex flex-1 lg:justify-end justify-center mb-3"
         >
-          <img className="h-80" src={avatar} alt="" />
+          <img
+            className="h-80"
+            src="./src/assets/easlo-laptop.svg"
+            alt="image-avatar"
+          />
         </div>
       </div>
     </section>

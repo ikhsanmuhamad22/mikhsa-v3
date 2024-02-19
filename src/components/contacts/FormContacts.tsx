@@ -1,6 +1,12 @@
 const FormContacts = () => {
+  const handleSubmit = (event: { preventDefault: () => void }) => {
+    event.preventDefault();
+    alert(
+      'Sorry, this feature does not work yet. Please use WhatsApp or other alternatives.'
+    );
+  };
   return (
-    <form action="/" className="flex flex-col gap-3 lg:p-6 p-0">
+    <form onSubmit={handleSubmit} className="flex flex-col gap-3 lg:p-6 p-0">
       <input className="rounded-sm p-2 pl-3" placeholder="Name" type="text" />
       <input className="rounded-sm p-2 pl-3" placeholder="Email" type="email" />
       <textarea
