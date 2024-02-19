@@ -29,7 +29,7 @@ const Summery = () => {
         >
           <img
             className="h-80"
-            src="/project-img/easlo-laptop.svg"
+            src="/assets/easlo-laptop.svg"
             alt="image-avatar"
           />
         </div>
