@@ -18,7 +18,7 @@ const Summery = () => {
           </p>
           <br />
           <button className="p-2 bg-light hover:bg-white text-dark rounded-sm">
-            <a href="./src/assets/IHSAN.pdf" download>
+            <a href="/assets/IHSAN.pdf" download>
               Get Resume
             </a>
           </button>
@@ -29,7 +29,7 @@ const Summery = () => {
         >
           <img
             className="h-80"
-            src="./src/assets/easlo-laptop.svg"
+            src="/project-img/easlo-laptop.svg"
             alt="image-avatar"
           />
         </div>
