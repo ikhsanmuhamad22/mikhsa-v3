@@ -2,9 +2,9 @@ const SkillItem = ({ skills, skillSection }: SkillItemProps) => {
   return (
     <div
       className={`grid ${
-        skillSection === 'certificate'
-          ? 'grid-cols-1'
-          : 'lg:grid-cols-4 md:grid-cols-3 grid-cols-2'
+        skillSection === "certificate" || skillSection === "education"
+          ? "grid-cols-1"
+          : "lg:grid-cols-4 md:grid-cols-3 grid-cols-2"
       }  gap-2 mt-3 max-w-full`}
     >
       {skills.map((skill: SkillItem) => (

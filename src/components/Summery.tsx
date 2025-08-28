@@ -6,10 +6,9 @@ const Summery = () => {
         <div id="text-summery" className="flex-1 w-full">
           <h2 className="text-2xl font-bold mb-3">Hello i'm Ihsan Muhammad</h2>
           <p className="text-base font-medium">
-            Vocational school graduates who are interested in programming
-            technology and software, have experience to create and develop
-            several frontend and backend web projects such as CSM articles and
-            online stores.
+            University Student who are interested in programming technology and
+            software, have experience to create and develop several frontend and
+            backend web projects such as CSM articles and online stores.
           </p>
           <br />
           <p className="text-base font-medium">
@@ -18,7 +17,7 @@ const Summery = () => {
           </p>
           <br />
           <button className="p-2 bg-light hover:bg-white text-dark rounded-sm">
-            <a href="/assets/IHSAN.pdf" download>
+            <a href="/assets/porto_id.pdf" download>
               Get Resume
             </a>
           </button>
