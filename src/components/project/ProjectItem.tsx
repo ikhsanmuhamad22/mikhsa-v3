@@ -1,10 +1,12 @@
-import { Link } from 'react-router-dom';
+import { Link } from "react-router-dom";
 
 const ProjectItem = ({ projectItem }: ProjectItemProps) => {
+  const reverseItem = [...projectItem].reverse();
   return (
     <div className="grid lg:grid-cols-2 grid-cols-1 gap-4 mt-3 max-w-full ">
-      {projectItem.map((project: ProjectItem) => (
+      {reverseItem.map((project: ProjectItem) => (
         <Link
+          target="_blank"
           to={project.view_code}
           key={project.id}
           className="bg-jet p-3 rounded-sm flex flex-col justify-between gap-2 hover:scale-105 transition-all hover:bg-dark "

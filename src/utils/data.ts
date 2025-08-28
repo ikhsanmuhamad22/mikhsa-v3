@@ -176,4 +176,26 @@ export const projects = [
     view_page: "",
     role: "backend",
   },
+  {
+    id: 7,
+    title: "Phantom_clone",
+    img: "phantom_clone.png",
+    stack: ["Flutter", "provider", "http"],
+    short_desc:
+      "This project focuses solely on the UI and displays a list of cryptocurrencies with details from a public API.",
+    view_code: "https://github.com/ikhsanmuhamad22/phantom_clone",
+    view_page: "",
+    role: "application",
+  },
+  {
+    id: 8,
+    title: "Mounthly Expense Tracker",
+    img: "mounthly_expense.png",
+    stack: ["Flutter", "Riverpod", "SharedPreferences", "Intl"],
+    short_desc:
+      "A simple Flutter-based Expense Tracker application used to record, manage, and monitor daily expenses.",
+    view_code: "https://github.com/ikhsanmuhamad22/mounthly_expensess",
+    view_page: "",
+    role: "application",
+  },
 ];

@@ -17,7 +17,7 @@ const Summery = () => {
           </p>
           <br />
           <button className="p-2 bg-light hover:bg-white text-dark rounded-sm">
-            <a href="/assets/IHSAN.pdf" download>
+            <a href="/assets/porto_id.pdf" download>
               Get Resume
             </a>
           </button>
