@@ -1,6 +1,6 @@
 const SkillHeader = ({ changeSkill, skillSection }: SkillHeaderProps) => {
   return (
-    <div className="flex gap-1 pb-1 border-b-2">
+    <div className="flex gap-1 pb-1 border-b-2 overflow-x-auto whitespace-nowrap scrollbar-hide">
       <div
         onClick={() => changeSkill("education")}
         className={`flex items-center space-x-2 px-2 rounded-sm ${
