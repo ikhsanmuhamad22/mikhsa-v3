@@ -1,10 +1,9 @@
 import { Link } from "react-router-dom";
 
 const ProjectItem = ({ projectItem }: ProjectItemProps) => {
-  const reverseItem = [...projectItem].reverse();
   return (
     <div className="grid lg:grid-cols-2 grid-cols-1 gap-4 mt-3 max-w-full ">
-      {reverseItem.map((project: ProjectItem) => (
+      {projectItem.map((project: ProjectItem) => (
         <Link
           target="_blank"
           to={project.view_code}
