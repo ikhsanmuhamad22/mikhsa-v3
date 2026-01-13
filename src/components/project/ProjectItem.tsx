@@ -6,7 +6,7 @@ const ProjectItem = ({ projectItem }: ProjectItemProps) => {
       {projectItem.map((project: ProjectItem) => (
         <Link
           target="_blank"
-          to={project.view_code}
+          to={project.view_page ? project.view_page : project.view_code}
           key={project.id}
           className="bg-jet p-3 rounded-sm flex flex-col justify-between gap-2 hover:scale-105 transition-all hover:bg-dark "
         >
