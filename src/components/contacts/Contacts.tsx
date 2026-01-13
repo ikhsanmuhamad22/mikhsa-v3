@@ -1,5 +1,5 @@
-import { Link } from 'react-router-dom';
-import FormContacts from './FormContacts';
+import { Link } from "react-router-dom";
+import FormContacts from "./FormContacts";
 
 const Contacts = () => {
   return (
@@ -74,7 +74,7 @@ const Contacts = () => {
               </div>
             </Link>
             <Link
-              to="https://www.instagram.com/ikhsnmhmd001_/"
+              to="https://www.instagram.com/mikhsannn__/"
               target="_blank"
               className="flex gap-3 bg-jet hover:bg-dark hover:scale-105 transition-all p-1 px-2 rounded-sm cursor-pointer items-center"
             >
@@ -90,7 +90,7 @@ const Contacts = () => {
               </svg>
               <div>
                 <h2 className="font-bold">Instagram</h2>
-                <p>ikhsnmhmd001_</p>
+                <p>mikhsannn__</p>
               </div>
             </Link>
           </div>

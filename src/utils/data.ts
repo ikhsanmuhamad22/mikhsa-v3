@@ -198,4 +198,15 @@ export const projects = [
     view_page: "",
     role: "application",
   },
+  {
+    id: 9,
+    title: "JangLPTransport",
+    img: "jangLPTrans.png",
+    stack: ["React", "TypeScript", "Vite"],
+    short_desc:
+      "JangLpTrans is a travel service provider specializing in routes to and from Cianjur, Jabodetabek, Sukabumi, and Bandung. The company emphasizes premium service, safety, and convenience, offering door-to-door pickup so passengers are collected directly from their homes",
+    view_code: "https://github.com/ikhsanmuhamad22/nyaman-tur-booking",
+    view_page: "https://www.janglptrans.com/",
+    role: "frontend",
+  },
 ];
